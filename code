@@ -1,0 +1,22 @@
+CalculateResult 1.0 // Считывает введённые символы.
+===============
+
+import java.util.*;
+
+public class CalculateResult {
+	int x, y;
+	String op;
+
+
+	public static void main(String[] args){
+		int x, y;
+		String op;
+		Scanner scanner = new Scanner(System.in);
+		
+	  x = scanner.nextInt();
+		op = scanner.next();
+		y = scanner.nextInt();
+		
+	}
+}
+
