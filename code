@@ -1,5 +1,28 @@
 CalculateResult 1.4 Запрашивает уравнение и выводит второе число и 2 преобразованных в строки массива на экран.
 ===================
+
+package toString;
+
+import java.util.Scanner;
+
+public class CompareAllNumInArray {
+public static void main(String[] args) {
+System.out.println("Введите пример.");
+Scanner scanner = new Scanner(System.in);
+        String a = scanner.nextLine();
+        
+        String[] parts = a.split("\\D");
+        String[] operators = a.split("\\d+");
+        System.out.println(parts.length);//Печать количества символов.
+        System.out.println(java.util.Arrays.toString(parts));
+        System.out.println(java.util.Arrays.toString(operators));
+        
+    }
+      
+}
+
+CalculateResult 1.4 Запрашивает уравнение и выводит второе число и 2 преобразованных в строки массива на экран.
+===================
 8+9
 9
 [8, 9]
