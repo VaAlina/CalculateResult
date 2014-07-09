@@ -1,3 +1,25 @@
+CalculateResult 1.3 Запрашивает уравнение и выводит нужную мне часть на экран.
+===================
+package toString;
+
+import java.util.Scanner;
+
+public class CompareAllNumInArray {
+	public static void main(String[] args) {
+		System.out.println("Введите пример.");
+		Scanner scanner = new Scanner(System.in);
+        String a = scanner.nextLine();
+        
+        String[] parts = a.split("\\D");
+        String[] operators = a.split("\\d+");
+        System.out.println(java.util.Arrays.toString(parts));
+        System.out.println(java.util.Arrays.toString(operators));
+
+    }
+      
+}
+
+
 CalculateResult 1.2 Запрашивает уравнение и выводит нужную мне часть на экран.
 ===================
 package toString;
