@@ -1,3 +1,54 @@
+CalculateResult 1.7 
+===================
+package toString;
+
+import java.util.*;
+
+public class CompareAllNumInArray {
+public static void main(String[] args) {
+System.out.println("Введите пример.");
+Scanner scanner = new Scanner(System.in);
+        String a = scanner.nextLine();
+        String[] parts = a.split("\\D");
+        String[] operators = a.split("\\d+");
+        
+        double[] mas = new double[parts.length];
+        for (int i = 0; i< parts.length; i++) {
+        	mas[i] = Double.valueOf(parts[i]);
+        	
+        }
+        
+        double x = mas[0];
+        double y = mas[1];
+        double result = 0;
+        
+     
+        switch(operators[1]){
+        case "+":
+        	result = x+y;
+        break;	
+        
+        case "-":
+             result = x-y;
+        break;
+        
+        case "/":
+        	result = x/y;
+        break;
+        
+        case "*":
+        	result = x*y;
+        break;	
+        }
+        
+        System.out.println(result);
+        System.out.println(Arrays.toString(parts));
+        System.out.println(Arrays.toString(operators));
+        
+    }
+      
+}
+
 CalculateResult 1.6 
 ===================
 package toString;
