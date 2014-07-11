@@ -1,3 +1,59 @@
+CalculateResult 1.9 //Для операций с 2-мя переменными. 
+===================
+package toString;
+
+import java.util.*;
+
+public class CompareAllNumInArray {
+public static void main(String[] args) {
+System.out.println("Введите пример.");
+Scanner scanner = new Scanner(System.in);
+        String a = scanner.nextLine();
+        String[] parts = a.split("\\D");
+        String[] operators = a.split("\\d+");
+        
+        double[] mas = new double[parts.length];
+        for (int i = 0; i< parts.length; i++) {
+        	mas[i] = Double.valueOf(parts[i]);
+        	
+        }
+        
+        double x = 0;
+        double y = 0;
+        double result = 0;
+        
+        for (int k = 0, l = 1, j = 1; k <= mas.length && l <= mas.length && j <= operators.length; k = k+2, l = l+2, j++){
+        x = mas[k];	
+        y = mas[l];
+        
+        switch(operators[j]){
+        case "+":
+        	result = x+y;
+        break;	
+        
+        case "-":
+             result = x-y;
+        break;
+        
+        case "/":
+        	result = x/y;
+        break;
+        
+        case "*":
+        	result = x*y;
+        break;	
+        }
+        }
+        
+        System.out.println(result);
+        System.out.println(Arrays.toString(parts));
+        System.out.println(Arrays.toString(operators));
+        
+    }
+      
+}
+
+
 CalculateResult 1.8 //Для операций с 2-мя переменными. В случае увеличения числа операций до 2-х, применяет последнюю.
 ===================
 package toString;
