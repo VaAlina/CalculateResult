@@ -1,3 +1,32 @@
+CalculateResult 1.6 
+===================
+
+package toString;
+
+import java.util.Scanner;
+
+public class CompareAllNumInArray {
+public static void main(String[] args) {
+System.out.println("Введите пример.");
+Scanner scanner = new Scanner(System.in);
+        String a = scanner.nextLine();
+        
+        String[] parts = a.split("\\D");
+        String[] operators = a.split("\\d+");
+        
+        double[] mas = new double[parts.length];
+        for (int i = 0; i< parts.length; i++) {
+        	mas[i] = Double.valueOf(parts[i]);
+        	
+        }
+        System.out.println(mas[0]*mas[1]);//Печать количества символов.
+        System.out.println(java.util.Arrays.toString(parts));
+        System.out.println(java.util.Arrays.toString(operators));
+        
+    }
+      
+}
+
 CalculateResult 1.5 Запрашивает уравнение и выводит количество чисел на экран.
 ===================
 
