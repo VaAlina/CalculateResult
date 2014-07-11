@@ -1,5 +1,38 @@
 CalculateResult 1.6 
 ===================
+package toString;
+
+import java.util.Scanner;
+
+public class CompareAllNumInArray {
+public static void main(String[] args) {
+System.out.println("Введите пример.");
+Scanner scanner = new Scanner(System.in);
+        String a = scanner.nextLine();
+        
+        String[] parts = a.split("\\D");
+        String[] operators = a.split("\\d+");
+        
+        double[] mas = new double[parts.length];
+        for (int i = 0; i< parts.length; i++) {
+        	mas[i] = Double.valueOf(parts[i]);
+        	
+        }
+        
+        double x = mas[0];
+        double y = mas[1];
+        double result = x+y;
+        
+        System.out.println(result);//Печать количества символов.
+        System.out.println(java.util.Arrays.toString(parts));
+        System.out.println(java.util.Arrays.toString(operators));
+        
+    }
+      
+}
+
+CalculateResult 1.6 
+===================
 
 package toString;
 
